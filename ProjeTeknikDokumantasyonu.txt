@@ -1,0 +1,30 @@
+﻿Yapılan incelemelere göre projemiz Hybrid N-Tier mimarisinde yazılacaktır...N-Tİer mimarisinin hibritleştirilme sebebinin en büyük etkeni Core platformunda calısacak olmamızdır...Core platformu Middleware yapısı ile birlikte Interface'lere önem verip injection'lar sayesinde instance alma durumunu gercekleştirdiginden dolayı biz de Onion'in tercih ettigi Interface sistemini mimarimize almayı uygun gördük...Dolayısıyla N-Tier mimarisi özünü korumakla beraber normalde klasik sisteminden farklı olarak interface'ler ile calısmaya uygun hale getirilecektir(Interface segregation'i zaten gözlemleyeceksiniz).... Projemizin platformu .Net 8.0 olacaktır....
+
+
+Projemizde acıklacak katmanlar ve görevleri şu şekildedir:
+
+ENTITIS katmanı:
+Veritabanımızdaki tabloları temsil eden class'ları bu class'lar ile ilgili varsa interface'leri, enumları barındıracaktır...
+
+CONF Katmanı:
+Veritabanına gönderilecek yapıların ayarlamalarını icinde barındıracak katmandır...Kompakt olabilmesi icin ayrılmıstır(istendigi takdirde bu mimariden cıkarılıp baska mimarilere entegre edilebilir). DAL tarafından cagrılarak veritabanı olusturuldugunda tetiklenecektir...
+
+DAL Katmanı:
+Veritabanı ile haberlesmemizi saglayacak katmandır...Bu haberlesmeyi icerisinde barındıracagı Repository'ler ile yapacaktır...Repository'lerin icerisinde CRUD işlemleri yapılacaktır...Bu katmanın icerisinde EntityFramework Core kullanılacaktır...Proje CodeFirst ile veritabanını ayaga kaldıracaktır..
+
+BLL Katmanı:
+İş akışımız ile ilgilenecek olan katmandır...Mevcut Crud operasyonlarımızda bir class'ımızın iş akışına girmesi söz konusu olmasa bile yine Manager pattern ile birlikte o class icin bir Manager acılacaktır(gelecekteki iş akısı isteklerine simdiden destek hazır olsun diye)...Bu katmanın icerisinde Dependency Injection ile birlikte Interface'ler kullanılacaktır. Bu katmanda aynı zamanda Middleware resolveları yapılacaktır...
+
+COMMON Katmanı:
+Katman bagımsız bir şekilde(Her katman tarafından kullanılma ihtimali olan bir şekilde) kullanılabilecek class'ların barındırılacagı katmandır.. MailGonderme, Sifreleme vs...
+
+PL(MVC): Kullanıcımın projemizle iletişime gececegi kısımdır...BLL ile haberleserek Manager kullanacaktır ve işlemler bu şekilde yapılacaktır.
+
+----
+Projede degişken isimleri degişkenler local variable oldugu sürece camelCase, field oldugu sürece basında _ sembolü olmak üzere camelCase ; Property, metot ve class isimleri PascalCase standartlarında yazılacaktır ve projede Türkçe karakter kullanılmayacaktır...Class isimleri kesinlikle cogul olmayacaktır.
+
+Katman isimleri Solution'in isminin sonuna . koyularak katmansal takılarla yazılacaktır (HybridNTierECommerce.DAL)
+
+------------
+
+Tasarım patternlerinden Generic Repository tarzı Manager classlarda , Configuration classlarda, Repository class'larında kullanılacaktır..MEvcut algoritmada bu tasarım patternlerinin dısında bir baska Tasarım Paterni öngörülmemektedir...Ancal projenin esnekligi buna elverişli oldugu takdirde, projenin mimari paterniyle bir cakısma olmaması kaydıyla (bu durum özel olarak istenecek olan bir Arge süreci icerisinde hemen belirlenmek zorundadır) gerekli görülürse rahatca eklenebilecektir...

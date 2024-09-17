@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92121B20-55FB-47B9-A75E-7B858B4A037B}"
+	ProjectSection(SolutionItems) = preProject
+		ChallengeOdevler.txt = ChallengeOdevler.txt
+		ProjeAdimlari.txt = ProjeAdimlari.txt
+		ProjeTeknikDokumantasyonu.txt = ProjeTeknikDokumantasyonu.txt
+		ReadMe.txt = ReadMe.txt
+		RefactorIstekleri.txt = RefactorIstekleri.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.ENTITIES", "HybridNTierECommerce.ENTITIES\HybridNTierECommerce.ENTITIES.csproj", "{8A998A82-2613-4032-9C13-D8D7B0BC70BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.CONF", "HybridNTierECommerce.CONF\HybridNTierECommerce.CONF.csproj", "{AA7E0F4A-2054-403E-B89B-0513222D7084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.DAL", "HybridNTierECommerce.DAL\HybridNTierECommerce.DAL.csproj", "{D1E99F4C-9B37-4D03-910B-8679DAA515AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.BLL", "HybridNTierECommerce.BLL\HybridNTierECommerce.BLL.csproj", "{6962CED5-F26C-4528-BABD-D69553AC5232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.COMMON", "HybridNTierECommerce.COMMON\HybridNTierECommerce.COMMON.csproj", "{8F69301F-3998-4D00-A45C-B36FF46555B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.MVCUI", "HybridNTierECommerce.MVCUI\HybridNTierECommerce.MVCUI.csproj", "{DEF904B6-FC5B-4996-B4FA-769FAC951CF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A998A82-2613-4032-9C13-D8D7B0BC70BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A998A82-2613-4032-9C13-D8D7B0BC70BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A998A82-2613-4032-9C13-D8D7B0BC70BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A998A82-2613-4032-9C13-D8D7B0BC70BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7E0F4A-2054-403E-B89B-0513222D7084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7E0F4A-2054-403E-B89B-0513222D7084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7E0F4A-2054-403E-B89B-0513222D7084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7E0F4A-2054-403E-B89B-0513222D7084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E99F4C-9B37-4D03-910B-8679DAA515AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E99F4C-9B37-4D03-910B-8679DAA515AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E99F4C-9B37-4D03-910B-8679DAA515AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E99F4C-9B37-4D03-910B-8679DAA515AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6962CED5-F26C-4528-BABD-D69553AC5232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6962CED5-F26C-4528-BABD-D69553AC5232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6962CED5-F26C-4528-BABD-D69553AC5232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6962CED5-F26C-4528-BABD-D69553AC5232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F69301F-3998-4D00-A45C-B36FF46555B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F69301F-3998-4D00-A45C-B36FF46555B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F69301F-3998-4D00-A45C-B36FF46555B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F69301F-3998-4D00-A45C-B36FF46555B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF904B6-FC5B-4996-B4FA-769FAC951CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF904B6-FC5B-4996-B4FA-769FAC951CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF904B6-FC5B-4996-B4FA-769FAC951CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF904B6-FC5B-4996-B4FA-769FAC951CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C8E1416-A5B4-4C4B-B370-7BCD2D06BD69}
+	EndGlobalSection
+EndGlobal
