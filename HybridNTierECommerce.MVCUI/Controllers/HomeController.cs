@@ -6,6 +6,35 @@ namespace HybridNTierECommerce.MVCUI.Controllers
 {
     public class HomeController : Controller
     {
+
+
+        //ICategoryRepository _catRep;
+
+        //IOC (Inversion of Controls)
+
+
+        //ICategoryRepository => CategoryRepository,CategorySpecRepository,CategoryV2Repository
+
+
+        /*
+         
+         public HomeController(ICategoryRepository categoryRepository)
+
+        {
+           _catRep = categoryRepository;
+        }
+         
+
+
+        //Middleware
+
+        builder.Services.AddTransient(ICategoryRepository,CategoryRepository);
+         
+         
+         
+         */
+
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -28,5 +57,9 @@ namespace HybridNTierECommerce.MVCUI.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
+      
     }
 }

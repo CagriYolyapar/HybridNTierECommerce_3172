@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HybridNTierECommerce.ENTITIES\HybridNTierECommerce.ENTITIES.csproj" />
+  </ItemGroup>
+
 </Project>

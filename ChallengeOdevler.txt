@@ -1,0 +1,16 @@
+﻿--------------------Bu ödevler sadece ve sadece proje yazımı tamamen bittiginde devreye girecektir----------------------
+
+ ***Musteri İstekleri
+
+1 => Musteri bir kategoriye girdigimizde sitede o kategorinin de alt kategorilerinin cıkmasını istiyor...BU tarz bir sistemde veritabanı nasıl bir degişiklige girmek zorunda kalırdı...
+
+2 => Musteri farklı ozellikleri  ürünleri satabilmek istiyor. Böyle bir durumda veritabanı nasıl tasarlanmak zorunda kalırdı..
+
+
+
+
+
+
+
+--Teknik yapılar
+--IRepository icerisindeki  FindAsync metodu mevcut durumda miras verilecek OrderDetailRepository'e hitap etmemektedir...Bunun düzenlenmesi gerekmektedir...
