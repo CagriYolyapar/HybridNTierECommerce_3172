@@ -23,10 +23,7 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
             _db = db;
         }
 
-        protected void Save()
-        {
-            _db.SaveChanges();
-        }
+      
         public void Add(T item)
         {
             _db.Set<T>().Add(item);
@@ -62,21 +59,7 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
 
         }
 
-        /// <summary>
-        /// Veriyi pasife ceken metodumuzdur
-        /// </summary>
-        /// <param name="item"></param>
-        public void Delete(T item)
-        {
-            item.Status = ENTITIES.Enums.DataStatus.Deleted;
-            item.DeletedDate = DateTime.Now;
-            Save();
-        }
-
-        public void DeleteRange(List<T> list)
-        {
-            foreach (T item in list) Delete(item);
-        }
+    
 
         public void Destroy(T item)
         {
@@ -144,6 +127,11 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
 
         }
 
+        public void Save()
+        {
+            _db.SaveChanges();
+        }
+
         public object Select(Expression<Func<T, object>> exp)
         {
             return _db.Set<T>().Select(exp);
@@ -153,6 +141,9 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
         {
             return _db.Set<T>().Select(exp);
         }
+
+
+        //Todo: Update metodu yerin sadece Entry metodu bulunur. Cünkü bizim istedigimiz sistem EF'ün orijinal Update metodu degildir. Dolayısıyla Entry ile update işlemini Manager yapar...
 
         public async Task UpdateAsync(T item)
         {
@@ -173,5 +164,7 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
         {
             return _db.Set<T>().Where(exp).ToList();
         }
+
+      
     }
 }

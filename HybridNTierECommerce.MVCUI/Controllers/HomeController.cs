@@ -1,3 +1,5 @@
+using HybridNTierECommerce.BLL.Managers.Abstracts;
+using HybridNTierECommerce.ENTITIES.Models;
 using HybridNTierECommerce.MVCUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -6,14 +8,7 @@ namespace HybridNTierECommerce.MVCUI.Controllers
 {
     public class HomeController : Controller
     {
-
-
-        //ICategoryRepository _catRep;
-
-        //IOC (Inversion of Controls)
-
-
-        //ICategoryRepository => CategoryRepository,CategorySpecRepository,CategoryV2Repository
+      
 
 
         /*
@@ -44,7 +39,11 @@ namespace HybridNTierECommerce.MVCUI.Controllers
 
         public IActionResult Index()
         {
+            
+
             return View();
+
+            
         }
 
         public IActionResult Privacy()

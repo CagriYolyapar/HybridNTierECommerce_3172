@@ -14,7 +14,7 @@ namespace HybridNTierECommerce.CONF.Configurations
         public override void Configure(EntityTypeBuilder<Product> builder)
         {
             base.Configure(builder);
-            builder.Property(x => x.UnitPrice).HasColumnType("money");
+            builder.Property(x => x.Price).HasColumnType("money");
         }
     }
 }
