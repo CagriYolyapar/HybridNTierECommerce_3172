@@ -23,7 +23,9 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
             _db = db;
         }
 
+
       
+
         public void Add(T item)
         {
             _db.Set<T>().Add(item);
@@ -59,7 +61,18 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
 
         }
 
-    
+        public void Delete(T item)
+        {
+            item.Status = ENTITIES.Enums.DataStatus.Deleted;
+            item.DeletedDate = DateTime.Now;
+            Save();
+        }
+
+        public void DeleteRange(List<T> list)
+        {
+            foreach (T item in list) Delete(item);
+            
+        }
 
         public void Destroy(T item)
         {
@@ -71,6 +84,13 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
         {
             _db.Set<T>().RemoveRange(list);
             Save();
+        }
+
+    
+
+        public T Find(int id)
+        {
+            return _db.Set<T>().Find(id);
         }
 
         public async Task<T> FindAsync(int id)

@@ -12,6 +12,12 @@ namespace HybridNTierECommerce.BLL.Managers.Concretes
 {
 
     //Onemli : Normal şartlarda bir Manager yapısı sadece Domain Entity almaz...Buradaki metotlar DTO da (Data Transfer Object) almalıdır...Siz bir Domain Entity üzerinden iş akısı islemlerini saglıklı bir şekilde yapamazsınız...
+
+
+   
+
+    
+
     public  class BaseManager<T> : IManager<T> where T : class, IEntity
     {
         //Bu class IRepository ile birlikte calısmak istiyor(spesifik bir repository ile degil Main Repository ile birlikte)
@@ -48,7 +54,7 @@ namespace HybridNTierECommerce.BLL.Managers.Concretes
             //Mapping DTO => DomainEntity
 
             SaatEkle(item);
-            _iRep.AddAsync(item);
+            _iRep.Add(item);
 
             return "Ekleme işlemi basarılıdır";
 
@@ -96,16 +102,14 @@ namespace HybridNTierECommerce.BLL.Managers.Concretes
 
         public void Delete(T item)
         {
-            item.DeletedDate = DateTime.Now.AddHours(3);
-            item.Status = ENTITIES.Enums.DataStatus.Deleted;
-            _iRep.Save();
+            _iRep.Delete(item);
 
         }
 
         public string DeleteRange(List<T> list)
         {
-            if (!ElemanKontrol(list)) return "10'dan fazla veri girişi yapamazsınız";
-            foreach (T item in list) Delete(item);
+            //if (!ElemanKontrol(list)) return "10'dan fazla veri girişi yapamazsınız";
+            _iRep.DeleteRange(list);
             return "Silme basarılı";
 
 

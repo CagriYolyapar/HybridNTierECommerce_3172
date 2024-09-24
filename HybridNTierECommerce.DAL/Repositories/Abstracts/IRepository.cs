@@ -20,17 +20,21 @@ namespace HybridNTierECommerce.DAL.Repositories.Abstracts
         List<T> GetAll();
         List<T> GetActives();
         
+        
         List<T> GetPassives();
         List<T> GetModifieds();
 
         //Modify Commands
 
-        void Save();
+
+     
         void Add(T item);
         Task AddAsync(T item);
         void AddRange(List<T> list);
         Task AddRangeAsync(List<T> list);
 
+        void Delete(T item);
+        void DeleteRange(List<T> list);
      
        
 
@@ -54,6 +58,8 @@ namespace HybridNTierECommerce.DAL.Repositories.Abstracts
 
      
         Task<T> FindAsync(int id);
+
+        T Find(int id);
 
         //Last datas
         List<T> GetLastDatas(int count);
