@@ -36,6 +36,9 @@ namespace HybridNTierECommerce.DAL.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("ActivationCode")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -109,16 +112,16 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1bbdac4e-2696-432d-b84c-42db5e27efec",
-                            CreatedDate = new DateTime(2024, 9, 19, 14, 18, 43, 549, DateTimeKind.Local).AddTicks(6820),
+                            ConcurrencyStamp = "86b3fe8a-219c-40a0-a528-0b04f7f91b8e",
+                            CreatedDate = new DateTime(2024, 9, 25, 10, 34, 36, 44, DateTimeKind.Local).AddTicks(629),
                             Email = "cagri@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "CAGRI@EMAIL.COM",
                             NormalizedUserName = "CGR123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKjl1HBK42GXygQwD/2UfBr/G5LS9VNGZqKfYH47o1chTtlizW5mk0cp67sorkdYnQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBVURTl9VEGsGyO+w7A+vdAuX40cARBZhZ3hu1RBly9BtvBS27rEqUl9xVVyPN/0Eg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bded2ca5-c4be-4082-8258-5a0425dd2962",
+                            SecurityStamp = "0d39d4ae-37ac-413e-a4e3-290b0eae7887",
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserName = "cgr123"
@@ -191,81 +194,81 @@ namespace HybridNTierECommerce.DAL.Migrations
                         new
                         {
                             ID = 1,
-                            CategoryName = "Jewelery",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(1761),
-                            Description = "Amet corporis deleniti ab esse accusantium et voluptas minima corporis.",
+                            CategoryName = "Toys",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(7983),
+                            Description = "Ducimus domates eaque nihil layıkıyla perferendis ekşili voluptate oldular aut.",
                             Status = 1
                         },
                         new
                         {
                             ID = 2,
-                            CategoryName = "Grocery",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2262),
-                            Description = "Explicabo gül olduğu koyun çıktılar magni velit dergi un qui.",
+                            CategoryName = "Games",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(8575),
+                            Description = "Sed dışarı kalemi dağılımı dağılımı voluptatem de ışık aut makinesi.",
                             Status = 1
                         },
                         new
                         {
                             ID = 3,
-                            CategoryName = "Games",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2320),
-                            Description = "Aperiam dicta vitae adanaya çarpan mi exercitationem enim olduğu aut.",
+                            CategoryName = "Electronics",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(8738),
+                            Description = "Corporis dergi sokaklarda gidecekmiş quam umut iusto commodi balıkhaneye ışık.",
                             Status = 1
                         },
                         new
                         {
                             ID = 4,
-                            CategoryName = "Games",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2375),
-                            Description = "Vel türemiş quia çobanın sandalye nemo uzattı quia voluptatem bahar.",
+                            CategoryName = "Movies",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(8811),
+                            Description = "Numquam minima fugit in ratione ekşili consequuntur gördüm yaptı dağılımı.",
                             Status = 1
                         },
                         new
                         {
                             ID = 5,
-                            CategoryName = "Baby",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2446),
-                            Description = "Kalemi architecto dolorem otobüs kapının dolor ut filmini çünkü yaptı.",
+                            CategoryName = "Jewelery",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(8881),
+                            Description = "Tempora çünkü deleniti türemiş uzattı accusantium dolayı ekşili sit accusantium.",
                             Status = 1
                         },
                         new
                         {
                             ID = 6,
                             CategoryName = "Games",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2506),
-                            Description = "Ab amet ipsa alias bilgisayarı blanditiis adipisci sequi dolorem filmini.",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(8951),
+                            Description = "Velit gülüyorum sıla magnam iusto domates çakıl lambadaki lambadaki quaerat.",
                             Status = 1
                         },
                         new
                         {
                             ID = 7,
-                            CategoryName = "Electronics",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2548),
-                            Description = "Ducimus ve doğru aliquid yazın dignissimos koşuyorlar göze anlamsız masanın.",
+                            CategoryName = "Games",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(9029),
+                            Description = "Voluptatem anlamsız dolore vel consequatur architecto çobanın dignissimos architecto değirmeni.",
                             Status = 1
                         },
                         new
                         {
                             ID = 8,
-                            CategoryName = "Electronics",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2597),
-                            Description = "Quae dolores gül quaerat şafak fugit bilgiyasayarı rem qui yazın.",
+                            CategoryName = "Grocery",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(9129),
+                            Description = "Cesurca voluptate quis gördüm biber beatae masaya lakin neque ea.",
                             Status = 1
                         },
                         new
                         {
                             ID = 9,
-                            CategoryName = "Sports",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2718),
-                            Description = "Magni et biber suscipit çorba sıfat odio dolor filmini ipsum.",
+                            CategoryName = "Kids",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(9198),
+                            Description = "Kalemi sıfat bundan yaptı blanditiis bahar velit ad labore adanaya.",
                             Status = 1
                         },
                         new
                         {
                             ID = 10,
-                            CategoryName = "Music",
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2769),
-                            Description = "Nisi çarpan eius laudantium velit amet ratione dolores ekşili beğendim.",
+                            CategoryName = "Kids",
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(9266),
+                            Description = "Doğru minima layıkıyla exercitationem quia magnam illo dignissimos numquam voluptatum.",
                             Status = 1
                         });
                 });
@@ -396,10 +399,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 1,
                             CategoryID = 1,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(2869),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(9400),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 841.70m,
-                            ProductName = "Refined Fresh Hat",
+                            Price = 34.02m,
+                            ProductName = "Unbranded Fresh Car",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -407,10 +410,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 2,
                             CategoryID = 2,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(3365),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 101, DateTimeKind.Utc).AddTicks(9912),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 380.88m,
-                            ProductName = "Tasty Fresh Car",
+                            Price = 763.07m,
+                            ProductName = "Unbranded Cotton Bike",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -418,10 +421,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 3,
                             CategoryID = 3,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(3478),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(38),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 812.04m,
-                            ProductName = "Unbranded Concrete Tuna",
+                            Price = 575.12m,
+                            ProductName = "Handmade Steel Computer",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -429,10 +432,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 4,
                             CategoryID = 4,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(3700),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(176),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 369.15m,
-                            ProductName = "Unbranded Soft Table",
+                            Price = 42.09m,
+                            ProductName = "Sleek Soft Pants",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -440,10 +443,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 5,
                             CategoryID = 5,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(3858),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(284),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 603.35m,
-                            ProductName = "Ergonomic Steel Car",
+                            Price = 790.46m,
+                            ProductName = "Incredible Fresh Towels",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -451,10 +454,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 6,
                             CategoryID = 6,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(3956),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(427),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 36.27m,
-                            ProductName = "Fantastic Steel Tuna",
+                            Price = 613.50m,
+                            ProductName = "Rustic Metal Pizza",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -462,10 +465,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 7,
                             CategoryID = 7,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(4075),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(537),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 319.72m,
-                            ProductName = "Rustic Metal Gloves",
+                            Price = 490.73m,
+                            ProductName = "Tasty Cotton Bacon",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -473,10 +476,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 8,
                             CategoryID = 8,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(4171),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(724),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 142.74m,
-                            ProductName = "Sleek Wooden Car",
+                            Price = 574.37m,
+                            ProductName = "Sleek Plastic Pants",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -484,10 +487,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 9,
                             CategoryID = 9,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(4286),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(827),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 587.82m,
-                            ProductName = "Ergonomic Soft Chair",
+                            Price = 567.23m,
+                            ProductName = "Sleek Rubber Sausages",
                             Status = 1,
                             UnitsInStock = 100
                         },
@@ -495,10 +498,10 @@ namespace HybridNTierECommerce.DAL.Migrations
                         {
                             ID = 10,
                             CategoryID = 10,
-                            CreatedDate = new DateTime(2024, 9, 19, 11, 18, 43, 610, DateTimeKind.Utc).AddTicks(4381),
+                            CreatedDate = new DateTime(2024, 9, 25, 7, 34, 36, 102, DateTimeKind.Utc).AddTicks(967),
                             ImagePath = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22grey%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2250%22%20font-size%3D%2220%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3E100x100%3C%2Ftext%3E%3C%2Fsvg%3E",
-                            Price = 33.12m,
-                            ProductName = "Sleek Plastic Towels",
+                            Price = 424.83m,
+                            ProductName = "Generic Fresh Car",
                             Status = 1,
                             UnitsInStock = 100
                         });
@@ -537,7 +540,7 @@ namespace HybridNTierECommerce.DAL.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "4e11c849-d649-4aa1-a2b1-53ffe552a3db",
+                            ConcurrencyStamp = "a4e1546c-ebbb-4db2-b650-3fe798d7a1c0",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

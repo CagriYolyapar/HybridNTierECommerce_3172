@@ -17,5 +17,10 @@ namespace HybridNTierECommerce.BLL.Managers.Concretes
         {
             _catRep = catRep;
         }
+
+        public void Deneme()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

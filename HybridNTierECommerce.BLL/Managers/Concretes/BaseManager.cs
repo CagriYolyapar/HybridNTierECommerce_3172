@@ -18,7 +18,7 @@ namespace HybridNTierECommerce.BLL.Managers.Concretes
 
     
 
-    public  class BaseManager<T> : IManager<T> where T : class, IEntity
+    public abstract class BaseManager<T> : IManager<T> where T : class, IEntity
     {
         //Bu class IRepository ile birlikte calısmak istiyor(spesifik bir repository ile degil Main Repository ile birlikte)
         protected readonly IRepository<T> _iRep;

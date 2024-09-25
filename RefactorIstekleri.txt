@@ -1,1 +1,9 @@
 ﻿1 => Repository ve Manager'daki gerekli iş akışına sahip kodları düzenleyin.
+
+2 => HomeController'da UserSignIn ve UserRegister durumları icin VM'leri ayrıstırmayı unutmayın...
+
+3 => Manager metotlarımızdaki su andaki Domain Entity kullanımını düzeltin...(DTO kullanılması gerekir)
+
+4 => Destroy işleminde foreign key'i bagımlı olan yapıların foreign keylerinin null' cekilme business logic'ini refactor edin..Bu esnada Cascading configuration'i (Context OnModelCreating işlemleri icerisinde) arastırın...
+
+5 => Cookie ayarlarını düzenleyerek AccessDenied sayfası ve SignIn sayfasını belirleyin...

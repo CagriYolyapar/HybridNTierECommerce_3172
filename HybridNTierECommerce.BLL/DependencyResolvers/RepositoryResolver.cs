@@ -48,7 +48,7 @@ namespace HybridNTierECommerce.BLL.DependencyResolvers
              */
 
 
-            services.AddScoped(typeof(IRepository<>),typeof(BaseRepository<>));
+            //services.AddScoped(typeof(IRepository<>),typeof(BaseRepository<>));
 
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();

@@ -1,0 +1,19 @@
+﻿@model Category
+
+<form asp-action="Create" asp-controller="Category" method="post" class="p-3 w-75 m-auto">
+    <div class="mb-3">
+        <label>Kategori ismini giriniz</label>
+        <input asp-for="CategoryName" class="form-control"/>
+    </div>
+
+     <div class="mb-3">
+         <label>Acıklama giriniz</label>
+         <input asp-for="Description" class="form-control" />
+     </div>
+
+     <div class="mb-3">
+         
+
+         <button class="btn btn-primary">Kategori ekle</button>
+     </div>
+</form>

@@ -13,7 +13,7 @@ namespace HybridNTierECommerce.DAL.Repositories.Concretes.EF
 {
 
     //Artık .Net Core'da Kullandıgımız Hybrid N-Tier Architecture'de BaseRepository class'ınız Abstract olmayacak...Cünkü Interfaceler birlikte kullandıgımız Dependency Injection icin BaseRepository class'ımızın IOC tarafına anlamlı bir veri modeli olusturabilecek şekilde anlatılması lazım...
-    public class BaseRepository<T> : IRepository<T> where T : class, IEntity
+    public abstract class BaseRepository<T> : IRepository<T> where T : class, IEntity
     {
         protected MyContext _db;
 

@@ -1,0 +1,31 @@
+﻿@model UserRegisterRequestModel
+
+<center>
+    <h1>
+        SignIn'e hosgeldiniz
+        @TempData["Message"]
+    </h1>
+
+
+    <form asp-action="SignIn" asp-controller="Home" method="post" class="p-3 w-75 m-auto">
+
+        <div class="mb-3">
+            <label>Kullanıcı ismini giriniz</label>
+            <input asp-for="UserName" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Sifre giriniz</label>
+            <input asp-for="Password" class="form-control" />
+        </div>
+
+     
+
+        <div class="mb-3">
+            <button class="btn btn-primary">Giriş Yap</button>
+        </div>
+
+    </form>
+
+
+</center>

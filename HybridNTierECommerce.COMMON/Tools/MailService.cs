@@ -22,12 +22,16 @@ namespace HybridNTierECommerce.COMMON.Tools
         //Karsınıza Signing in to Google kısmında 2-Step Verification cıkacak
         //Alt tarafta Application Password'ler var orada generate secenegini secin
 
-        public static void Send(string receiver, string password = "oktczfjzfohickzn", string body = "Test mesajıdır", string subject = "Email testi", string sender = "yzlm3170@gmail.com")
+        //rvzhpxwpegickwtq
+
+
+        public static void Send(string receiver, string password = "rvzhpxwpegickwtq", string body = "Test mesajıdır", string subject = "Email testi", string sender = "testemail3172@gmail.com")
         {
             MailAddress senderEmail = new(sender);
             MailAddress receiverEmail = new(receiver);
 
             //Bizim Email işlemlerimiz SMTP'ye göre yapılır...
+            //smtp.office365.com,smtp-mail.outlook.com
             //Kullandıgınız gmail hesabınızın baska uygulamalar tarafından mesaj gönderme sistemini acmanız lazım
 
             SmtpClient smtp = new()

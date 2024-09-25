@@ -9,5 +9,7 @@ namespace HybridNTierECommerce.BLL.Managers.Abstracts
 {
     public interface ICategoryManager : IManager<Category>
     {
+
+        void Deneme();
     }
 }

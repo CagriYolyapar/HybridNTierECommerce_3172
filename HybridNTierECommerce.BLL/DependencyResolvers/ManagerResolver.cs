@@ -14,7 +14,7 @@ namespace HybridNTierECommerce.BLL.DependencyResolvers
     {
         public static void AddManagerServices(this IServiceCollection services)
         {
-            services.AddScoped(typeof(IManager<>), typeof(BaseManager<>));
+            //services.AddScoped(typeof(IManager<>), typeof(BaseManager<>));
 
             services.AddScoped<IProductManager,ProductManager>();
             services.AddScoped<ICategoryManager,CategoryManager>();

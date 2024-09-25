@@ -1,0 +1,64 @@
+﻿@model List<Product>
+
+<section class="panel">
+
+
+    <header class="panel-heading">
+        Ürünler - Yeni bir kategori eklemek icin <a asp-action="Create" asp-controller="Product">tıklayınız</a>
+    </header>
+
+
+    <div class="panel-body">
+        <div class="adv-table">
+            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+                <thead>
+                    <tr>
+                        <th>Ürün ID</th>
+                        <th>Ürün ismi</th>
+                        <th class="hidden-phone">Fiyat</th>
+                        <th class="hidden-phone">Kategorisi</th>
+                        <th class="hidden-phone">Stok</th>
+                        <th class="hidden-phone">Durumu</th>
+                        <th class="hidden-phone">Güncelle</th>
+                        <th class="hidden-phone">Pasif</th>
+                        <th class="hidden-phone">Yok et</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    @foreach (Product item in Model)
+                    {
+                        <tr class="gradeX">
+                            <td>@item.ID</td>
+                            <td>@item.ProductName </td>
+                            <td class="hidden-phone">@item.Price</td>
+
+                            @if(item.Category == null)
+                            {
+                                <td>Kategorisi yok</td>
+                            }
+                            else
+                            {
+                                <td class="hidden-phone">@item.Category.CategoryName</td>
+                            }
+                            
+                            <td class="hidden-phone">@item.UnitsInStock</td>
+                            <td class="center hidden-phone">@item.Status</td>
+                            <td class="center hidden-phone"><a asp-action="UpdateProduct" asp-route-id="@item.ID" class="btn btn-warning">Guncelle</a>   </td>
+                            <td class="center hidden-phone"><a asp-action="DeleteProduct" asp-route-id="@item.ID" class="btn btn-danger">Pasif</a> </td>
+                            <td class="center hidden-phone"><a asp-action="DestroyProduct" asp-route-id="@item.ID" class="btn btn-danger">Yok et</a> </td>
+
+                        </tr>
+                    }
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</section>
