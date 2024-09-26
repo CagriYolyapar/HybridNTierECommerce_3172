@@ -265,10 +265,18 @@
                         </a>
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
-                            <li><a href="#"><i class=" icon-suitcase"></i>Profile</a></li>
+
+                            @RenderSection("Sepet",false)
+
+                            @*
+                                Burada actıgımız RenderSection, doldurulması zorunlu bir alan degildir (false argümanı burada bunu belirtmektedir)...Lakin doldurulmak istenirse Layout'ta bir View'da doldurulacaktır... Ve o View cagrıldıgı zaman o View icin Layout'in bu kesiminde gözükecektir
+                            *@
+
+
+                            @* <li><a href="#"><i class=" icon-suitcase"></i>Profile</a></li>
                             <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
                             <li><a href="#"><i class="icon-bell-alt"></i> Notification</a></li>
-                            <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+                            <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li> *@
                         </ul>
                     </li>
                     <!-- user login dropdown end -->
@@ -442,6 +450,8 @@
               <!-- sidebar menu end-->
           </div>
       </aside>
+
+      
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">

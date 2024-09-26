@@ -6,23 +6,24 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92121B20-55FB-47B9-A75E-7B858B4A037B}"
 	ProjectSection(SolutionItems) = preProject
 		ChallengeOdevler.txt = ChallengeOdevler.txt
+		Odevler.txt = Odevler.txt
 		ProjeAdimlari.txt = ProjeAdimlari.txt
 		ProjeTeknikDokumantasyonu.txt = ProjeTeknikDokumantasyonu.txt
 		ReadMe.txt = ReadMe.txt
 		RefactorIstekleri.txt = RefactorIstekleri.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.ENTITIES", "HybridNTierECommerce.ENTITIES\HybridNTierECommerce.ENTITIES.csproj", "{8A998A82-2613-4032-9C13-D8D7B0BC70BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridNTierECommerce.ENTITIES", "HybridNTierECommerce.ENTITIES\HybridNTierECommerce.ENTITIES.csproj", "{8A998A82-2613-4032-9C13-D8D7B0BC70BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.CONF", "HybridNTierECommerce.CONF\HybridNTierECommerce.CONF.csproj", "{AA7E0F4A-2054-403E-B89B-0513222D7084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridNTierECommerce.CONF", "HybridNTierECommerce.CONF\HybridNTierECommerce.CONF.csproj", "{AA7E0F4A-2054-403E-B89B-0513222D7084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.DAL", "HybridNTierECommerce.DAL\HybridNTierECommerce.DAL.csproj", "{D1E99F4C-9B37-4D03-910B-8679DAA515AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridNTierECommerce.DAL", "HybridNTierECommerce.DAL\HybridNTierECommerce.DAL.csproj", "{D1E99F4C-9B37-4D03-910B-8679DAA515AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.BLL", "HybridNTierECommerce.BLL\HybridNTierECommerce.BLL.csproj", "{6962CED5-F26C-4528-BABD-D69553AC5232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridNTierECommerce.BLL", "HybridNTierECommerce.BLL\HybridNTierECommerce.BLL.csproj", "{6962CED5-F26C-4528-BABD-D69553AC5232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.COMMON", "HybridNTierECommerce.COMMON\HybridNTierECommerce.COMMON.csproj", "{8F69301F-3998-4D00-A45C-B36FF46555B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridNTierECommerce.COMMON", "HybridNTierECommerce.COMMON\HybridNTierECommerce.COMMON.csproj", "{8F69301F-3998-4D00-A45C-B36FF46555B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridNTierECommerce.MVCUI", "HybridNTierECommerce.MVCUI\HybridNTierECommerce.MVCUI.csproj", "{DEF904B6-FC5B-4996-B4FA-769FAC951CF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridNTierECommerce.MVCUI", "HybridNTierECommerce.MVCUI\HybridNTierECommerce.MVCUI.csproj", "{DEF904B6-FC5B-4996-B4FA-769FAC951CF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,6 +4,8 @@
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddHttpClient();//Eger bir API consume edilecekse HTTP client tarafında oldugumuz Middleware'e bildirmeliyiz...
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDistributedMemoryCache(); //Eger Session kompleks yapılarla calısmak icin Extension metodu ekleme durumuna maruz kalacaksa bu kod projenizin saglıklı calısması icin gerekli...
@@ -52,6 +54,6 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Register}/{id?}");
+    pattern: "{controller=Shopping}/{action=Index}/{id?}");
 
 app.Run();

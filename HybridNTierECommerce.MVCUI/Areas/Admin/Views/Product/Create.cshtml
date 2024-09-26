@@ -1,5 +1,45 @@
 ﻿@model CreateProductPageVM
 
-<form >
+
+
+@*
+    Eger Form üzerinden bir dosya gönderecek iseniz Form tag'iniz kesinlikle özel bir attribute'a sahip olması lazım
+
+*@
+
+<form asp-action="CreateProduct" asp-controller="Product" method="post" class="p-3 w-75 m-auto" enctype="multipart/form-data">
+
+
+    <div class="mb-3">
+        <label>Ürün ismi giriniz</label>
+        <input asp-for="Product.ProductName" class="form-control"/>
+    </div>
+
+
+    <div class="mb-3">
+        <label>Fiyat giriniz</label>
+        <input asp-for="Product.Price" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Kategori giriniz</label>
+       <select asp-for="Product.CategoryID" asp-items='new SelectList(Model.Categories,"ID","CategoryName")'>
+
+       </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Stok giriniz</label>
+        <input asp-for="Product.UnitsInStock" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Dosya seciniz</label>
+        <input type="file" name="formFile" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-primary">Ürün Ekle</button>
+    </div>
 
 </form>

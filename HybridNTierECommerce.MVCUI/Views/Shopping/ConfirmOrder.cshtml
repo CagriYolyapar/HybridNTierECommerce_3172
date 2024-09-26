@@ -1,0 +1,100 @@
+﻿@model OrderRequestPageVM
+
+<form asp-controller="Shopping" asp-action="ConfirmOrder" method="post">
+    <div class="form-group">
+        <label class="col-2 control-label">
+            Gonderim Adresi
+        </label>
+
+        <div class="col-10">
+            <input asp-for="Order.ShippingAddress" class="form-control" />
+        </div>
+    </div>
+
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <div class="form-group">
+            <label class="col-2 control-label">
+                Email Adresi
+            </label>
+
+            <div class="col-10">
+                <input asp-for="Order.Email" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-2 control-label">
+                Isim SoyIsim
+            </label>
+
+            <div class="col-10">
+                <input asp-for="Order.NameDescription" class="form-control" />
+            </div>
+        </div>
+    }
+
+
+    <div class="form-group">
+        <label class="col-2 control-label">
+            Kart Numarası
+        </label>
+
+        <div class="col-10">
+            <input asp-for="PaymentRequestModel.CardNumber" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-2 control-label">
+            Güvenlik Numarası
+        </label>
+
+        <div class="col-10">
+            <input asp-for="PaymentRequestModel.CVC" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-2 control-label">
+            Gecerlilik Süresi(Yıl)
+        </label>
+
+        <div class="col-10">
+            <input asp-for="PaymentRequestModel.ExpiryYear" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-2 control-label">
+            Gecerlilik Süresi(Ay)
+        </label>
+
+        <div class="col-10">
+            <input asp-for="PaymentRequestModel.ExpiryMonth" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-2 control-label">
+           Kart üzerindeki isim
+        </label>
+
+        <div class="col-10">
+            <input asp-for="PaymentRequestModel.CardUserName" class="form-control" />
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <label class="col-2 control-label">
+           Onaylamak icin tıklayınız
+        </label>
+
+        <div class="col-10">
+            <button class="btn btn-primary">Onayla</button>
+        </div>
+    </div>
+
+</form>
