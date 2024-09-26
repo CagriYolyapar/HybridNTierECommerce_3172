@@ -7,7 +7,9 @@
 2 => Musteri farklı ozellikleri  ürünleri satabilmek istiyor. Böyle bir durumda veritabanı nasıl tasarlanmak zorunda kalırdı..
 
 
+3 => İki e-ticaret sitesi grubu da urun bilgilerini dısarıya acsın...Sonra her bir e-ticaret sitesi diger site ile haberleserek ürün kıyaslaması yapsın... Eger bir ürün diger sitede daha ucuz ise kullanıcıya bilgi versin... Ve o siteye yonlendirme yapabilsin...
 
+4 => Kampanya sistemi bu veritabanı şemasına eklensin...Bir ürün belirli zamanlarda (bunu Admin belirlesin) bir veya birden fazla kampanyaya dahil olabilsin...Bir kampanyada da dogal olarak birden fazla ürün bulunabilsin...
 
 
 
