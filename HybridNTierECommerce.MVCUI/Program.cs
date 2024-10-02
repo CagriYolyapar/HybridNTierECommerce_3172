@@ -24,6 +24,7 @@ builder.Services.AddIdentityService();
 builder.Services.AddDbContextService();
 builder.Services.AddRepositoryServices();
 builder.Services.AddManagerServices();
+builder.Services.AddMapperService();
 
 
 

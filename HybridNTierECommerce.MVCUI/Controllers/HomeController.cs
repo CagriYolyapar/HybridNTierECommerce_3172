@@ -1,4 +1,6 @@
-﻿using HybridNTierECommerce.BLL.Managers.Abstracts;
+﻿using AutoMapper;
+using HybridNTierECommerce.BLL.DTOClasses;
+using HybridNTierECommerce.BLL.Managers.Abstracts;
 using HybridNTierECommerce.COMMON.Tools;
 using HybridNTierECommerce.ENTITIES.Models;
 using HybridNTierECommerce.MVCUI.Models;
@@ -19,22 +21,26 @@ namespace HybridNTierECommerce.MVCUI.Controllers
         readonly UserManager<AppUser> _userManager;
         readonly SignInManager<AppUser> _signInManager;
         readonly RoleManager<IdentityRole<int>> _roleManager;
+        readonly IMapper _mapper;
       
 
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole<int>> roleManager)
+        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole<int>> roleManager,IMapper mapper)
         {
             _logger = logger;
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _mapper = mapper;
         }
 
         public IActionResult Index()
         {
-            
 
+            CategoryDTO cdto = _mapper.Map<CategoryDTO>(new Category { CategoryName = "asadasd" });
+
+            Category c = _mapper.Map<Category>(cdto);
             return View();
 
             
